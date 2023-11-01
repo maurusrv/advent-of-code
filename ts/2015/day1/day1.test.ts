@@ -1,5 +1,5 @@
-import { describe, expect, it } from 'vitest'
-import { getFloor, getPositionToFirstEnterBasement, puzzleInput } from './day1'
+import { describe, expect, it, bench } from 'vitest'
+import { getFloor, getPositionToFirstEnterBasement, getPositionToFirstEnterBasementV2, getPositionToFirstEnterBasementV3, puzzleInput } from './day1'
 
 describe('Day 1: Not Quite Lisp', () => {
   describe('Part One', () => {
@@ -42,24 +42,66 @@ describe('Day 1: Not Quite Lisp', () => {
       '()())': 5,
     }
 
-    Object.keys(examples).forEach(instruction => (
-      describe(`For instruction: ${instruction}`, () => {
-        const expectedPosition = examples[instruction]
-        it(`should return position: ${expectedPosition}`, () => {
-          const resultPosition = getPositionToFirstEnterBasement(instruction)
-          
-          expect(resultPosition).toBe(expectedPosition)          
+    describe('Solution One', () => {
+      Object.keys(examples).forEach(instruction => (
+        describe(`For instruction: ${instruction}`, () => {
+          const expectedPosition = examples[instruction]
+          it(`should return position: ${expectedPosition}`, () => {
+            const resultPosition = getPositionToFirstEnterBasement(instruction)
+            
+            expect(resultPosition).toBe(expectedPosition)          
+          })
+        })
+      ))
+  
+      describe('For puzzle input', () => {
+        it(`should return correct position`, () => {
+          const resultPosition = getPositionToFirstEnterBasement(puzzleInput)
+  
+          expect(resultPosition).toBe(1797)
         })
       })
-    ))
+    })
 
-    describe('For puzzle input', () => {
-      it(`should return correct position`, () => {
-        const resultPosition = getPositionToFirstEnterBasement(puzzleInput)
+    describe('Solution Two', () => {
+      Object.keys(examples).forEach(instruction => (
+        describe(`For instruction: ${instruction}`, () => {
+          const expectedPosition = examples[instruction]
+          it(`should return position: ${expectedPosition}`, () => {
+            const resultPosition = getPositionToFirstEnterBasementV2(instruction)
+            
+            expect(resultPosition).toBe(expectedPosition)          
+          })
+        })
+      ))
+  
+      describe('For puzzle input', () => {
+        it(`should return correct position`, () => {
+          const resultPosition = getPositionToFirstEnterBasementV2(puzzleInput)
+  
+          expect(resultPosition).toBe(1797)
+        })
+      })
+    })
 
-        console.log('resultPosition', resultPosition)
-
-        expect(resultPosition).toBe(0)
+    describe('Solution Three', () => {
+      Object.keys(examples).forEach(instruction => (
+        describe(`For instruction: ${instruction}`, () => {
+          const expectedPosition = examples[instruction]
+          it(`should return position: ${expectedPosition}`, () => {
+            const resultPosition = getPositionToFirstEnterBasementV3(instruction)
+            
+            expect(resultPosition).toBe(expectedPosition)          
+          })
+        })
+      ))
+  
+      describe('For puzzle input', () => {
+        it(`should return correct position`, () => {
+          const resultPosition = getPositionToFirstEnterBasementV3(puzzleInput)
+  
+          expect(resultPosition).toBe(1797)
+        })
       })
     })
   })
