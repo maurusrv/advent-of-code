@@ -2,19 +2,19 @@ require_relative './day1'
 
 context "Day 1: Not Quite Lisp" do
   context "Part One" do
-    context "Solution One" do
-      examples = {
-        '(())': 0,
-        '()()': 0,
-        '(((': 3,
-        '(()(()(': 3,
-        '))(((((': 3,
-        '())': -1,
-        '))(': -1,
-        ')))': -3,
-        ')())())': -3,
-      }
+    examples = {
+      '(())': 0,
+      '()()': 0,
+      '(((': 3,
+      '(()(()(': 3,
+      '))(((((': 3,
+      '())': -1,
+      '))(': -1,
+      ')))': -3,
+      ')())())': -3,
+    }
 
+    context "Solution One" do
       examples.each { |instruction, expectedFloor|
         describe "For instruction: #{instruction}" do
           it "should return floor: #{expectedFloor}" do
@@ -35,18 +35,6 @@ context "Day 1: Not Quite Lisp" do
     end
 
     context "Solution Two" do
-      examples = {
-        '(())': 0,
-        '()()': 0,
-        '(((': 3,
-        '(()(()(': 3,
-        '))(((((': 3,
-        '())': -1,
-        '))(': -1,
-        ')))': -3,
-        ')())())': -3,
-      }
-  
       examples.each { |instruction, expectedFloor|
         describe "For instruction: #{instruction}" do
           it "should return floor: #{expectedFloor}" do

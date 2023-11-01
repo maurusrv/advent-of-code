@@ -1,5 +1,5 @@
 
-
+## Slower
 def get_floor(instruction, current_floor = 0)
   parens = instruction.split('')
 
@@ -16,6 +16,7 @@ def get_floor(instruction, current_floor = 0)
   floor
 end
 
+## Faster
 def get_floor_v2(instruction, current_floor = 0)
   floor = current_floor
 

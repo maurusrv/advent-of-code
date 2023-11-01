@@ -4,8 +4,8 @@ Since I get bored or lazy easily to create those passion projects, here is a rep
 ## Typescript
 ### Configuration
 1. `vitest` is used as testing tool.
-2. to run tests: `npm test`
-3. to run benchmark: `npm run bench`
+2. To run tests: `npm test`
+3. To run benchmark: `npm run bench`
 
 ### Learnings
 1. `tinybench` integrated in vitest is handy.
@@ -13,8 +13,8 @@ Since I get bored or lazy easily to create those passion projects, here is a rep
 ## Go
 ### Configuration
 1. `gotest` is used for colorized go tests.
-2. to run tests: `gotest -v`
-3. to run benchmark: `gotest -bench=.`
+2. To run tests: `gotest -v`
+3. To run benchmark: `gotest -bench=.`
 ### Learnings
 1. Conventionally capital case for function names.
 2. No optional parameters for functions.
@@ -24,15 +24,24 @@ Since I get bored or lazy easily to create those passion projects, here is a rep
 ## Ruby
 ### Configuration
 1. `rspec` is used as testing tool.
-2. to run tests: `rspec`
-3. to run benchmark: `ruby [dayx_bench.rb]`
+2. To run tests: `rspec`
+3. To run benchmark: `ruby [dayx_bench.rb]`
 ### Learnings
 1. `each_` is handy for readability in looping strings (as an array)
 2. returning on a function without the return keyword is amazing! haha
 ### TODO
 1. Benchmark is shitty, no colors, and I need to check first how to best implement the benchmark inside rspec.
 
+## Python
+### Configuration
+1. `pytest` is used as testing tool.
+2. To run tests: `pytest`. The benchmark is included in the result logs.
+### Learnings
+1. Easy to setup and adapt since types are defined by values.
+2. I'm laking no braces for a change!
+
 ## TODO
 1. Might try putting my personalized puzzle inputs on a text file. Then maybe also practice file access on each programming languages, but who knows when.
+2. Add programming language installation maybe. But I'm basically using `asdf`, and system installation for go.
 
 * Learnings are not comprehensive, only the notable things I observe at the time of practicing and current skill.
