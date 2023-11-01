@@ -1,8 +1,6 @@
 package day1
 
-import (
-	"strings"
-)
+import "strings"
 
 func GetFloor(instruction string, currentFloor int) int {
 	parens := strings.Split(instruction, "")
@@ -22,6 +20,7 @@ func GetFloor(instruction string, currentFloor int) int {
 	return floor
 }
 
+// Index started with 0 and only up to len - 1, since we are accessing each character of the instruction
 func GetPositionToFirstEnterBasement(instruction string) int {
 	position := 0
 	currentFloor := 0
@@ -41,11 +40,12 @@ func GetPositionToFirstEnterBasement(instruction string) int {
 	return position
 }
 
+// Index started with 1 up to len, since we are using it as exclusive upper bound
 func GetPositionToFirstEnterBasementV2(instruction string) int {
 	position := 0
 
 	for i := 1; i <= len(instruction); i++ {
-		paren := string(instruction[0:i])
+		paren := string(instruction[:i])
 
 		floor := GetFloor(paren, 0)
 

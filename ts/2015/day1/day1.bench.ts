@@ -1,8 +1,9 @@
 import { bench, describe } from "vitest";
-import { getPositionToFirstEnterBasement, getPositionToFirstEnterBasementV2, getPositionToFirstEnterBasementV3, puzzleInput } from "./day1";
+import { getPositionToFirstEnterBasement, getPositionToFirstEnterBasementV2, getPositionToFirstEnterBasementV3 } from "./day1";
+import { puzzleInput } from "./day1.test";
 
 
-describe('', () => {
+describe('getPositionToFirstEnterBasement', () => {
   bench('getPositionToFirstEnterBasement', () => {
     getPositionToFirstEnterBasement(puzzleInput)
   })

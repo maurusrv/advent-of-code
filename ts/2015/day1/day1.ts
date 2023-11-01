@@ -1,8 +1,7 @@
 export const getFloor = (instruction: string, currentFloor = 0): number => {
-  const parens = instruction.split('');
-
   let floor = currentFloor;
-
+  
+  const parens = instruction.split('');
   parens.forEach(paren => {
     if (paren === '(') floor++;
     if (paren === ')') floor--;
@@ -11,6 +10,7 @@ export const getFloor = (instruction: string, currentFloor = 0): number => {
   return floor;
 }
 
+// Slowest since using substring, (meaning always restarting from index 0 every loop on getFloor)
 export const getPositionToFirstEnterBasement = (instruction: string): number => {
   let position = 0;
 
@@ -26,6 +26,7 @@ export const getPositionToFirstEnterBasement = (instruction: string): number => 
   return position;
 }
 
+// Fastest in benchmark result, but uses additional variable currentFloor
 export const getPositionToFirstEnterBasementV2 = (instruction: string): number => {
   let position = 0;
   let currentFloor = 0;
@@ -44,12 +45,12 @@ export const getPositionToFirstEnterBasementV2 = (instruction: string): number =
   return position;
 }
 
+// Slower than V2, just use a forEach instead of a good 'ol for loop
 export const getPositionToFirstEnterBasementV3 = (instruction: string): number => {
-
-  const parens = instruction.split('')
-
   let currentFloor = 0;
   let position = 0;
+
+  const parens = instruction.split('')
   
   parens.forEach((paren, index) => {
     const floor = getFloor(paren, currentFloor)
