@@ -21,6 +21,17 @@ Since I get bored or lazy easily to create those passion projects, here is a rep
 ### TODO
 1. Find a way for go folder to run all tests without accessing specific folders.
 
+## Rust
+### Configuration
+1. to run test `cargo test`
+2. `criterion` is used for benchmarking.
+3. to run benchmark: `cargo bench`
+### Learnings
+1. Created the folder as a library crate for now.
+2. Read that the unit tests for each module is included within its own file.
+3. & - only a reference!
+4. * - deferencing the borrow to get the value!
+
 ## Ruby
 ### Configuration
 1. `rspec` is used as testing tool.
@@ -42,6 +53,7 @@ Since I get bored or lazy easily to create those passion projects, here is a rep
 
 ## TODO
 1. Might try putting my personalized puzzle inputs on a text file. Then maybe also practice file access on each programming languages, but who knows when.
-2. Add programming language installation maybe. But I'm basically using `asdf`, and system installation for go.
+2. Add programming language installation maybe. But I'm basically using `asdf`. See `.tool-versions`
 
 * Learnings are not comprehensive, only the notable things I observe at the time of practicing and current skill.
+* Go to a specific language directory to be able to run the commands properly.
