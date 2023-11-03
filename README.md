@@ -3,9 +3,10 @@ Since I get bored or lazy easily to create those passion projects, here is a rep
 
 ## Typescript
 ### Configuration
-1. `vitest` is used as testing tool.
-2. To run tests: `npm test`
-3. To run benchmark: `npm run bench`
+1. Just uses `npm` for now.
+2. `vitest` is used as testing tool.
+3. To run tests: `npm test`
+4. To run benchmark: `npm run bench`
 
 ### Learnings
 1. `tinybench` integrated in vitest is handy.
@@ -23,9 +24,10 @@ Since I get bored or lazy easily to create those passion projects, here is a rep
 
 ## Rust
 ### Configuration
-1. to run test `cargo test`
-2. `criterion` is used for benchmarking.
-3. to run benchmark: `cargo bench`
+1. Used `cargo` to setup folder.
+2. to run test `cargo test`
+3. `criterion` is used for benchmarking.
+4. to run benchmark: `cargo bench`
 ### Learnings
 1. Created the folder as a library crate for now.
 2. Read that the unit tests for each module is included within its own file.
@@ -50,6 +52,15 @@ Since I get bored or lazy easily to create those passion projects, here is a rep
 ### Learnings
 1. Easy to setup and adapt since types are defined by values.
 2. I'm laking no braces for a change!
+
+## Elixir
+### Configuration
+1. Used `mix` for setup.
+2. `espec` is used as testing framework to have that context, describe, and it blocks.
+3. To run tests: `mix espec`
+
+### Learnings
+1. `let` macro is used for memoization of data inside test blocks.
 
 ## TODO
 1. Might try putting my personalized puzzle inputs on a text file. Then maybe also practice file access on each programming languages, but who knows when.
