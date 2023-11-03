@@ -51,7 +51,7 @@ Since I get bored or lazy easily to create those passion projects, here is a rep
 2. To run tests: `pytest`. The benchmark is included in the result logs.
 ### Learnings
 1. Easy to setup and adapt since types are defined by values.
-2. I'm laking no braces for a change!
+2. I'm liking no braces for a change!
 
 ## Elixir
 ### Configuration
@@ -60,7 +60,7 @@ Since I get bored or lazy easily to create those passion projects, here is a rep
 3. To run tests: `mix espec`
 
 ### Learnings
-1. `let` macro is used for memoization of data inside test blocks.
+1. Pattern matching and pipe is a breath of fresh air. Gotta check back the other languages' implem to try really utilizing what each of the language can do or shines.
 
 ## TODO
 1. Might try putting my personalized puzzle inputs on a text file. Then maybe also practice file access on each programming languages, but who knows when.
