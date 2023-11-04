@@ -45,9 +45,9 @@ func GetPositionToFirstEnterBasementV2(instruction string) int {
 	position := 0
 
 	for i := 1; i <= len(instruction); i++ {
-		paren := string(instruction[:i])
+		parens := string(instruction[:i])
 
-		floor := GetFloor(paren, 0)
+		floor := GetFloor(parens, 0)
 
 		if floor == -1 {
 			position = i

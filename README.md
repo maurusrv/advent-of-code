@@ -58,9 +58,10 @@ Since I get bored or lazy easily to create those passion projects, here is a rep
 1. Used `mix` for setup.
 2. `espec` is used as testing framework to have that context, describe, and it blocks.
 3. To run tests: `mix espec`
-
 ### Learnings
 1. Pattern matching and pipe is a breath of fresh air. Gotta check back the other languages' implem to try really utilizing what each of the language can do or shines.
+### References
+1. [Writing Assertive Code With Elixir](https://dashbit.co/blog/writing-assertive-code-with-elixir)
 
 ## TODO
 1. Might try putting my personalized puzzle inputs on a text file. Then maybe also practice file access on each programming languages, but who knows when.
