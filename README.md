@@ -64,8 +64,12 @@ Since I get bored or lazy easily to create those passion projects, here is a rep
 1. [Writing Assertive Code With Elixir](https://dashbit.co/blog/writing-assertive-code-with-elixir)
 
 ## Zig
-### Learnings
-1. Can't find a way yet how to use hash maps.
+### Configuration
+1. To run tests: `zig test test.zig`
+### TODO
+1. How to properly use hash maps, and loops?
+2. Make vscode lsp work.
+3. Run all tests in single command with right number of tests.
 
 ## TODO
 1. Might try putting my personalized puzzle inputs on a text file. Then maybe also practice file access on each programming languages, but who knows when.
