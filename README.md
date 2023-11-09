@@ -71,6 +71,14 @@ Since I get bored or lazy easily to create those passion projects, here is a rep
 2. Make vscode lsp work.
 3. Run all tests in single command with right number of tests.
 
+## Erlang
+### Configuration
+1. To run tests: `./run_tests.escript`
+### TODO
+1. Explore `rebar3`.
+2. Learn more about variables and pipe returns.
+3. Maybe possible to not need creating beam file, and utilize escript.
+
 ## TODO
 1. Might try putting my personalized puzzle inputs on a text file. Then maybe also practice file access on each programming languages, but who knows when.
 2. Add programming language installation maybe. But I'm basically using `asdf`. See `.tool-versions`
